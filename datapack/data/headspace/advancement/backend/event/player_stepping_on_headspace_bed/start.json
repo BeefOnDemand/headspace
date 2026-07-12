@@ -1,0 +1,39 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "headspace:on_headspace_bed"
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "hs.event.SteppingOnHeadspaceBed": {
+                                "min": 0,
+                                "max": 0
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:reference",
+                            "name": "headspace:banned"
+                        }
+                    },
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "headspace:headspace_user"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "headspace:backend/event/player_stepping_on_headspace_bed/start"
+    }
+}

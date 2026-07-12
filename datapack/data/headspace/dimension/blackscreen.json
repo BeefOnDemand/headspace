@@ -1,0 +1,30 @@
+{
+    "type": "headspace:blackscreen",
+    "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+            "lakes": false,
+            "features": true,
+            "biome": "headspace:blackscreen",
+            "layers": [
+                {
+                    "block": "minecraft:bedrock",
+                    "height": 2
+                },
+                {
+                    "block": "minecraft:stone",
+                    "height": 10
+                },
+                {
+                    "block": "minecraft:dirt",
+                    "height": 3
+                },
+                {
+                    "block": "minecraft:grass_block",
+                    "height": 1
+                }
+            ],
+            "structure_overrides": []
+        }
+    }
+}

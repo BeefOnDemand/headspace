@@ -1,0 +1,1 @@
+data modify storage headspace:datapack pack.patch.1_0_0 set value ""

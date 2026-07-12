@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:echo_shard",
+      "components": {
+        "minecraft:item_model": "headspace:headspace_fragment"
+      }
+    },
+    "title": "ERROR: SYSTEM FAILURE",
+    "description": "INVALIDDATAINVALIDDATAINVALIDDATA",
+    "frame": "task",
+    "background": "headspace:blackscreen_background",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "headspace:blackscreen"
+      }
+    }
+  }
+}

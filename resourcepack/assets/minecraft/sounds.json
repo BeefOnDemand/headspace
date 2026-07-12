@@ -1,0 +1,11 @@
+{
+    "music.credits": {
+        "replace": true,
+        "sounds": [
+            {
+                "type": "event",
+                "name": "headspace:music.headspace"
+            }
+        ]
+    }
+}

@@ -1,0 +1,1 @@
+clear @s minecraft:goat_horn[item_model="headspace:otherworld_fragment"] 1

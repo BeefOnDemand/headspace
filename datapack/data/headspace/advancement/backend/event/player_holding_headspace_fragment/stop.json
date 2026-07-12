@@ -1,0 +1,30 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "hs.event.HoldingHeadspaceFragment": {
+                                "min": 1
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:reference",
+                            "name": "headspace:holding_headspace_fragment"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "headspace:backend/event/player_holding_headspace_fragment/stop"
+    }
+}

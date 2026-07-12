@@ -1,0 +1,18 @@
+{
+    "type": "headspace:whitescreen",
+    "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+            "lakes": false,
+            "features": false,
+            "biome": "headspace:whitescreen",
+            "layers": [
+                {
+                    "block": "minecraft:barrier",
+                    "height": 64
+                }
+            ],
+            "structure_overrides": []
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "temperature": 1,
+    "downfall": -1,
+    "has_precipitation": true,
+    "effects": {
+        "water_color": "#3842b2",
+        "grass_color": "#087d84",
+        "foliage_color": "#26ab97",
+        "dry_foliage_color": "#269393",
+        "grass_color_modifier": "none"
+    },
+    "features": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "minecraft:trees_badlands",
+            "minecraft:patch_firefly_bush_near_water",
+            "minecraft:patch_firefly_bush_near_water_swamp",
+            "minecraft:patch_firefly_bush_swamp",
+            "minecraft:patch_grass_badlands",
+            "patch_grass_plain",
+            "minecraft:patch_melon_sparse"
+        ],
+        []
+    ],
+    "spawners": {},
+    "spawn_costs": {},
+    "carvers": [],
+    "temperature_modifier": "none"
+}

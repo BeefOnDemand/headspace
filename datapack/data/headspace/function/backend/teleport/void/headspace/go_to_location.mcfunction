@@ -1,0 +1,1 @@
+$execute in headspace:bluescreen run tp @s $(x) $(y) $(z)

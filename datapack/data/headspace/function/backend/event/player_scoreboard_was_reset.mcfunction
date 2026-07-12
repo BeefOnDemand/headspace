@@ -1,0 +1,3 @@
+advancement revoke @s only headspace:backend/event/player_scoreboard_was_reset
+
+function headspace:backend/tools/initialize_player_scoreboard

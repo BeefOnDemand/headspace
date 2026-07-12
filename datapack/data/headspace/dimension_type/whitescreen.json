@@ -1,0 +1,37 @@
+{
+    "ambient_light": 0.1,
+    "attributes": {
+        "minecraft:visual/cloud_height": 192.33,
+        "minecraft:visual/fog_color": "#ffffff",
+        "minecraft:visual/sky_color": "#ffffff",
+        "minecraft:visual/cloud_color": "#00000000",
+        "minecraft:visual/sunrise_sunset_color": "#00000000",
+        "minecraft:audio/ambient_sounds": {
+            "loop": "ambient.soul_sand_valley.loop"
+        },
+        "minecraft:audio/background_music": {
+            "default": {
+                "sound": "minecraft:music.credits",
+                "max_delay": 12000,
+                "min_delay": 6000,
+                "replace_current_music": true
+            }
+        },
+        "minecraft:gameplay/bed_rule": {
+            "can_set_spawn": "never",
+            "can_sleep": "never",
+            "error_message": "Are you looking for a way out?"
+        }
+    },
+    "coordinate_scale": 1,
+    "has_ceiling": true,
+    "has_skylight": true,
+    "height": 384,
+    "infiniburn": "#minecraft:infiniburn_overworld",
+    "logical_height": 384,
+    "skybox": "none",
+    "min_y": 0,
+    "monster_spawn_block_light_limit": 0,
+    "monster_spawn_light_level": 0,
+    "has_ender_dragon_fight": false
+}

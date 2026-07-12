@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "headspace:bluescreen"
+            }
+        }
+    },
+    "rewards": {
+        "function": "headspace:backend/event/player_entered_headspace_for_first_time"
+    }
+}

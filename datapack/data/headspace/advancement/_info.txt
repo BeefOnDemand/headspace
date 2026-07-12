@@ -1,0 +1,29 @@
+Advancements
+
+The advancements in this datapack are divided into three main sections:
+    * admin - These are tools that admins can use to manage or check on players. All advancements here can be granted manually, some are auto-revoked after running once. Granting/revoking these triggers an event or function.
+    * story - These advancements are part of the headspace advancement tree and are visible to everyone when triggered. Contains lore discoveries, progress checkpoints, and various achievements. These can be safely granted or revoked.
+    * backend - These advancements are not visible to the player, and are used to trigger function handlers for player actions and states. These should never be granted or revoked manually.
+
+The Admin advancements are structured as follows:
+    * ban - Remove player from headspace and block them from entering. Persists until revoked.
+    * event_logger - all player events are announced to event_viewer players in chat
+    * event_viewer - can see all announced event_logger player events in chat
+    * probation - Force player gamemode to adventure in headspace. Persists until revoked.
+    * score_fix - Adds any missing scoreboard objectives to player's scoreboard. Normally objectives are automatially replaced if a player's scoreboard is fully reset, but this can fix cases where only some were removed. Revoked after running.
+    * storage_reset - Resets player's headspace info storage (saved coordinates, etc.) back to defaults. Revoked after running.
+
+The Story advancements are structured as follows:
+    * start - The root of the main advancement tree. Player discovered Headspace.
+    * blackscreen - An additional advancement tree for the blackscreen dimension.
+    * whitescreen - An additional advancement tree for the whitescreen dimension.
+
+The Backend advancements are structured as follows:
+    * ops - listeners for admin actions
+    * stress - listeners for player stress states and modifiers
+    * event - listeners for player actions and states
+        - file - A player action that triggers a response. Usually revoked after triggering.
+        * folder - A continuous player action that has specific handling for the different phases of the event.
+            - start - A response that runs only the first time a repeating event is triggered OR runs repeatedly until an additional condition is met.
+            - trigger - A response that runs every time a repeating event triggers after the start response is no longer running.
+            - stop - A response that runs only after the event has stopped triggering and at least one start response has finished.

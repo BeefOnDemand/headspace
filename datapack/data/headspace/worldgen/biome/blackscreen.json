@@ -1,0 +1,31 @@
+{
+    "temperature": 0.8,
+    "downfall": 0.4,
+    "has_precipitation": false,
+    "effects": {
+        "water_color": "#000000",
+        "dry_foliage_color": "#000000",
+        "foliage_color": "#000000",
+        "grass_color": "#000000",
+        "grass_color_modifier": "none"
+    },
+    "spawners": {},
+    "spawn_costs": {},
+    "carvers": [],
+    "features": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "pale_garden_vegetation",
+            "patch_grass_plain"
+        ],
+        []
+    ]
+}
