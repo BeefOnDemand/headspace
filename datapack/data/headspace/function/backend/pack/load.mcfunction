@@ -43,6 +43,7 @@ scoreboard objectives add hs.admin.PlayerInitialized dummy
 scoreboard objectives add hs.check.TeleportSuccess dummy
 scoreboard objectives add hs.check.PermanentChunk dummy
 scoreboard objectives add hs.check.LoadedChunk dummy
+scoreboard objectives add hs.check.BedLocated dummy
 scoreboard objectives add hs.check.StressChanged dummy
 scoreboard objectives add hs.check.GamemodeChanged dummy
 scoreboard objectives add hs.check.ConditionsPassed dummy

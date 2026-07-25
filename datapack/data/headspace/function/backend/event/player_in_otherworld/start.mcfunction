@@ -16,8 +16,6 @@ execute unless predicate headspace:banned unless items entity @s container.* min
 
 team leave @s[predicate=headspace:on_headspace_team]
 
-title @s clear
-
 execute if entity @s[tag=hs.tag.NewPlayer] run function headspace:backend/alert/player_escaped_headspace
 tag @s remove hs.tag.NewPlayer
 

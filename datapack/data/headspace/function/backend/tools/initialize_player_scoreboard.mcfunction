@@ -1,6 +1,7 @@
 execute unless score @s hs.check.TeleportSuccess matches 1 run scoreboard players set @s hs.check.TeleportSuccess 0
 execute unless score @s hs.check.PermanentChunk matches 1 run scoreboard players set @s hs.check.PermanentChunk 0
 execute unless score @s hs.check.LoadedChunk matches 1 run scoreboard players set @s hs.check.LoadedChunk 0
+execute unless score @s hs.check.BedLocated matches 1 run scoreboard players set @s hs.check.LoadedChunk 0
 execute unless score @s hs.check.StressChanged matches 1 run scoreboard players set @s hs.check.StressChanged 0
 execute unless score @s hs.check.GamemodeChanged matches 1 run scoreboard players set @s hs.check.GamemodeChanged 0
 
