@@ -95,11 +95,6 @@ team modify hs.team.Blackscreen color black
 team modify hs.team.Blackscreen friendlyFire true
 team modify hs.team.Blackscreen suffix "?"
 
-# Player stress level list displays
-scoreboard objectives setdisplay list hs.track.PlayerStress
-scoreboard objectives modify hs.track.PlayerStress displayautoupdate true
-scoreboard objectives modify hs.track.PlayerStress displayname "Stress Level"
-scoreboard objectives modify hs.track.PlayerStress rendertype integer
 
 # Player stress level bar displays
 bossbar add headspace:stress_0 "stress_0"
