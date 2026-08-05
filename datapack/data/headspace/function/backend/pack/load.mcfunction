@@ -103,7 +103,7 @@ bossbar set headspace:stress_0 color white
 bossbar set headspace:stress_0 style progress
 bossbar set headspace:stress_0 max 100
 bossbar set headspace:stress_0 value 0
-execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 run bossbar set headspace:stress_0 visible true
+execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 unless score [Headspace] hs.dpack.Enabled matches 0 run bossbar set headspace:stress_0 visible true
 
 bossbar add headspace:stress_10 "stress_10"
 bossbar set headspace:stress_10 name [{text:"Calm",color:"gray"}]
@@ -111,7 +111,7 @@ bossbar set headspace:stress_10 color white
 bossbar set headspace:stress_10 style progress
 bossbar set headspace:stress_10 max 100
 bossbar set headspace:stress_10 value 10
-execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 run bossbar set headspace:stress_10 visible true
+execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 unless score [Headspace] hs.dpack.Enabled matches 0 run bossbar set headspace:stress_10 visible true
 
 bossbar add headspace:stress_20 "stress_20"
 bossbar set headspace:stress_20 name [{text:"Calm",color:"gray"}]
@@ -119,7 +119,7 @@ bossbar set headspace:stress_20 color white
 bossbar set headspace:stress_20 style progress
 bossbar set headspace:stress_20 max 100
 bossbar set headspace:stress_20 value 20
-execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 run bossbar set headspace:stress_20 visible true
+execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 unless score [Headspace] hs.dpack.Enabled matches 0 run bossbar set headspace:stress_20 visible true
 
 bossbar add headspace:stress_30 "stress_30"
 bossbar set headspace:stress_30 name [{text:"Tired",color:"gray"}]
@@ -127,7 +127,7 @@ bossbar set headspace:stress_30 color white
 bossbar set headspace:stress_30 style progress
 bossbar set headspace:stress_30 max 100
 bossbar set headspace:stress_30 value 30
-execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 run bossbar set headspace:stress_30 visible true
+execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 unless score [Headspace] hs.dpack.Enabled matches 0 run bossbar set headspace:stress_30 visible true
 
 bossbar add headspace:stress_40 "stress_40"
 bossbar set headspace:stress_40 name [{text:"Tired",color:"gray"}]
@@ -135,7 +135,7 @@ bossbar set headspace:stress_40 color white
 bossbar set headspace:stress_40 style progress
 bossbar set headspace:stress_40 max 100
 bossbar set headspace:stress_40 value 40
-execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 run bossbar set headspace:stress_40 visible true
+execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 unless score [Headspace] hs.dpack.Enabled matches 0 run bossbar set headspace:stress_40 visible true
 
 bossbar add headspace:stress_50 "stress_50"
 bossbar set headspace:stress_50 name [{text:"Exhausted",color:"gray"}]
@@ -143,7 +143,7 @@ bossbar set headspace:stress_50 color white
 bossbar set headspace:stress_50 style progress
 bossbar set headspace:stress_50 max 100
 bossbar set headspace:stress_50 value 50
-execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 run bossbar set headspace:stress_50 visible true
+execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 unless score [Headspace] hs.dpack.Enabled matches 0 run bossbar set headspace:stress_50 visible true
 
 bossbar add headspace:stress_60 "stress_60"
 bossbar set headspace:stress_60 name [{text:"Exhausted",color:"gray"}]
@@ -151,7 +151,7 @@ bossbar set headspace:stress_60 color white
 bossbar set headspace:stress_60 style progress
 bossbar set headspace:stress_60 max 100
 bossbar set headspace:stress_60 value 60
-execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 run bossbar set headspace:stress_60 visible true
+execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 unless score [Headspace] hs.dpack.Enabled matches 0 run bossbar set headspace:stress_60 visible true
 
 bossbar add headspace:stress_70 "stress_70"
 bossbar set headspace:stress_70 name [{text:"Distressed",color:"gray"}]
@@ -159,7 +159,7 @@ bossbar set headspace:stress_70 color yellow
 bossbar set headspace:stress_70 style progress
 bossbar set headspace:stress_70 max 100
 bossbar set headspace:stress_70 value 70
-execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 run bossbar set headspace:stress_70 visible true
+execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 unless score [Headspace] hs.dpack.Enabled matches 0 run bossbar set headspace:stress_70 visible true
 
 bossbar add headspace:stress_80 "stress_80"
 bossbar set headspace:stress_80 name [{text:"Distressed",color:"gray"}]
@@ -167,7 +167,7 @@ bossbar set headspace:stress_80 color yellow
 bossbar set headspace:stress_80 style progress
 bossbar set headspace:stress_80 max 100
 bossbar set headspace:stress_80 value 80
-execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 run bossbar set headspace:stress_80 visible true
+execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 unless score [Headspace] hs.dpack.Enabled matches 0 run bossbar set headspace:stress_80 visible true
 
 bossbar add headspace:stress_90 "stress_90"
 bossbar set headspace:stress_90 name [{text:"Stressed Out",color:"gray"}]
@@ -175,7 +175,7 @@ bossbar set headspace:stress_90 color red
 bossbar set headspace:stress_90 style progress
 bossbar set headspace:stress_90 max 100
 bossbar set headspace:stress_90 value 90
-execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 run bossbar set headspace:stress_90 visible true
+execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 unless score [Headspace] hs.dpack.Enabled matches 0 run bossbar set headspace:stress_90 visible true
 
 bossbar add headspace:stress_100 "stress_100"
 bossbar set headspace:stress_100 name [{text:"Stressed Out",color:"red",bold:true}]
@@ -183,7 +183,7 @@ bossbar set headspace:stress_100 color red
 bossbar set headspace:stress_100 style progress
 bossbar set headspace:stress_100 max 100
 bossbar set headspace:stress_100 value 100
-execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 run bossbar set headspace:stress_100 visible true
+execute unless score [Headspace] hs.setts.DisablePlayerStress matches 1 unless score [Headspace] hs.dpack.Enabled matches 0 run bossbar set headspace:stress_100 visible true
 
 function headspace:backend/stress/update
 

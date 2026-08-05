@@ -1,5 +1,6 @@
 advancement revoke @s only headspace:backend/stress/fully_stressed
 
+execute if score [Headspace] hs.dpack.Enabled matches 0 run return fail
 execute if score [Headspace] hs.setts.DisablePlayerStress matches 1 run return fail
 
 title @s actionbar {"text":"Your mind and body are failing. You must rest now.",color:"red",bold:true}
