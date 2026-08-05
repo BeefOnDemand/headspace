@@ -4,7 +4,9 @@ execute unless data storage headspace:datapack pack.origin run data modify stora
 data modify storage headspace:datapack pack.version set value "v1.0.2"
 data modify storage headspace:datapack pack.changes set value '\
 * Fixed issue with stress bar showing up when player stress is disabled \n\
-* Removed numerical display of player stress in the global player list \n\
+* Removed display of player stress in the global player list \n\
+* Fixed minor issues with bed buddy teleporting \n\
+* Changed headspace disable function to also disable stress \n\
 '
 
 function headspace:backend/pack/patch/check
