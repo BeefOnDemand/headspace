@@ -1,3 +1,3 @@
-execute unless data storage headspace:datapack pack.patch.1_0_0 run function headspace:backend/pack/patch/1_0_0
+$function headspace:backend/pack/patch/1_0_0 {current:"$(current)"}
 
-execute unless data storage headspace:datapack pack.patch.1_0_2 run function headspace:backend/pack/patch/1_0_2
+$function headspace:backend/pack/patch/1_0_2 {current:"$(current)"}

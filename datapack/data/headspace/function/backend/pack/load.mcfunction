@@ -192,5 +192,11 @@ function headspace:backend/stress/update
 scoreboard players set [Headspace] hs.tools.StorageIndex 1
 execute unless data storage headspace:datapack pack.initialized run function headspace:backend/pack/initialize
 
-# Runs any update code for new version of datapack (one time) and keeps record of previously loaded versions
-function headspace:backend/pack/update
+# Runs any update code for new version of datapack (one time), applies patches, and keeps record of previously loaded versions
+function headspace:backend/pack/update {major:1, minor:0, fix:2}
+data modify storage headspace:datapack pack.changes set value '\
+* Fixed issue with stress bar showing up when player stress is disabled \n\
+* Removed display of player stress in the global player list \n\
+* Fixed minor issues with bed buddy teleporting \n\
+* Changed headspace disable function to also disable stress \n\
+'
