@@ -12,7 +12,7 @@ execute unless predicate headspace:headspace_user run return fail
 
 function headspace:backend/item/fragment/otherworld/clear
 
-execute unless predicate headspace:banned unless items entity @s container.* minecraft:goat_horn[custom_data={item_id:"headspace:headspace_fragment"}] run function headspace:backend/item/fragment/headspace/give
+execute unless predicate headspace:no_access unless items entity @s container.* minecraft:goat_horn[custom_data={item_id:"headspace:headspace_fragment"}] run function headspace:backend/item/fragment/headspace/give
 
 team leave @s[predicate=headspace:on_headspace_team]
 

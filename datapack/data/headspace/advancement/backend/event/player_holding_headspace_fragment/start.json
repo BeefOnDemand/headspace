@@ -22,7 +22,7 @@
                         "condition": "minecraft:inverted",
                         "term": {
                             "condition": "minecraft:reference",
-                            "name": "headspace:banned"
+                            "name": "headspace:no_access"
                         }
                     },
                     {

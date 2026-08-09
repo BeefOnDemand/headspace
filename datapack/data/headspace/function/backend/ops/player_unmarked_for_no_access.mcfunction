@@ -1,6 +1,6 @@
-advancement revoke @s only headspace:backend/ops/player_unmarked_for_ban
+advancement revoke @s only headspace:backend/ops/player_unmarked_for_no_access
 
-scoreboard players set @s hs.admin.PlayerBanned 0
+scoreboard players set @s hs.admin.PlayerAccess 0
 
 execute unless predicate headspace:headspace_user run return fail
 

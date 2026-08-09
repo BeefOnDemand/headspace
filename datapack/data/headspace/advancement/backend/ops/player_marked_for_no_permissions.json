@@ -6,7 +6,7 @@
                 "player": [
                     {
                         "condition": "minecraft:reference",
-                        "name": "headspace:banned"
+                        "name": "headspace:on_probation"
                     },
                     {
                         "condition": "minecraft:inverted",
@@ -14,7 +14,7 @@
                             "condition": "minecraft:entity_scores",
                             "entity": "this",
                             "scores": {
-                                "hs.admin.PlayerBanned": 1
+                                "hs.admin.PlayerPermissions": -1
                             }
                         }
                     }
@@ -23,6 +23,6 @@
         }
     },
     "rewards": {
-        "function": "headspace:backend/ops/player_marked_for_ban"
+        "function": "headspace:backend/ops/player_marked_for_no_permissions"
     }
 }

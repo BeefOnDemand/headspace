@@ -1,6 +1,7 @@
-advancement revoke @s only headspace:backend/ops/player_marked_for_ban
+advancement revoke @s only headspace:backend/ops/player_marked_for_no_access
 
-scoreboard players set @s hs.admin.PlayerBanned 1
+advancement revoke @s only headspace:admin/full_access
+scoreboard players set @s hs.admin.PlayerAccess -1
 
 execute as @s if predicate headspace:in_headspace run function headspace:backend/teleport/default/otherworld/use
 

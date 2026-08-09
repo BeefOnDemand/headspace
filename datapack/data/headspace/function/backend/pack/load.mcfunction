@@ -35,8 +35,8 @@ scoreboard objectives add hs.stress.TicksWithoutSleep dummy
 scoreboard objectives add hs.stress.DaysWithoutSleep dummy
 
 # Admin
-scoreboard objectives add hs.admin.PlayerBanned dummy
-scoreboard objectives add hs.admin.PlayerOnProbation dummy
+scoreboard objectives add hs.admin.PlayerAccess dummy
+scoreboard objectives add hs.admin.PlayerPermissions dummy
 scoreboard objectives add hs.admin.PlayerInitialized dummy
 
 # Temporary
@@ -64,6 +64,11 @@ scoreboard objectives add hs.dpack.Updated dummy
 scoreboard objectives add hs.setts.EnablePlayersByDefault dummy
 scoreboard objectives add hs.setts.DisablePlayerStress dummy
 
+scoreboard objectives add hs.setts.DefaultAccessLevel dummy
+scoreboard objectives add hs.setts.DefaultPermissionsLevel dummy
+scoreboard objectives add hs.setts.EnablePVP dummy
+
+
 # Temporary
 scoreboard objectives add hs.tools.StorageIndex dummy
 scoreboard objectives add hs.tools.ReinitializePack dummy
@@ -76,7 +81,8 @@ team modify hs.team.Whitescreen displayName Headspace
 team modify hs.team.Whitescreen seeFriendlyInvisibles true
 team modify hs.team.Whitescreen deathMessageVisibility never
 team modify hs.team.Whitescreen color gray
-team modify hs.team.Whitescreen friendlyFire true
+execute unless score [Headspace] hs.setts.EnablePVP matches 1 run team modify hs.team.Whitescreen friendlyFire false
+execute if score [Headspace] hs.setts.EnablePVP matches 1 run team modify hs.team.Whitescreen friendlyFire true
 team modify hs.team.Whitescreen suffix "?"
 
 team add hs.team.Bluescreen
@@ -84,7 +90,8 @@ team modify hs.team.Bluescreen displayName Headspace
 team modify hs.team.Bluescreen seeFriendlyInvisibles true
 team modify hs.team.Bluescreen deathMessageVisibility never
 team modify hs.team.Bluescreen color blue
-team modify hs.team.Bluescreen friendlyFire false
+execute unless score [Headspace] hs.setts.EnablePVP matches 1 run team modify hs.team.Bluescreen friendlyFire false
+execute if score [Headspace] hs.setts.EnablePVP matches 1 run team modify hs.team.Bluescreen friendlyFire true
 team modify hs.team.Bluescreen suffix "?"
 
 team add hs.team.Blackscreen
@@ -92,7 +99,8 @@ team modify hs.team.Blackscreen displayName Headspace
 team modify hs.team.Blackscreen seeFriendlyInvisibles true
 team modify hs.team.Blackscreen deathMessageVisibility never
 team modify hs.team.Blackscreen color black
-team modify hs.team.Blackscreen friendlyFire true
+execute unless score [Headspace] hs.setts.EnablePVP matches 1 run team modify hs.team.Blackscreen friendlyFire false
+execute if score [Headspace] hs.setts.EnablePVP matches 1 run team modify hs.team.Blackscreen friendlyFire true
 team modify hs.team.Blackscreen suffix "?"
 
 

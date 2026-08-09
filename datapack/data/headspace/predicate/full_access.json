@@ -4,7 +4,7 @@
     "predicate": {
         "minecraft:type_specific/player": {
             "advancements": {
-                "headspace:admin/ban": true
+                "headspace:admin/full_access": true
             }
         }
     }

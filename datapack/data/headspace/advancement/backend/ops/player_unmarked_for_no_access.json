@@ -8,14 +8,14 @@
                         "condition": "minecraft:inverted",
                         "term": {
                             "condition": "minecraft:reference",
-                            "name": "headspace:on_probation"
+                            "name": "headspace:no_access"
                         }
                     },
                     {
                         "condition": "minecraft:entity_scores",
                         "entity": "this",
                         "scores": {
-                            "hs.admin.PlayerOnProbation": 1
+                            "hs.admin.PlayerAccess": -1
                         }
                     }
                 ]
@@ -23,6 +23,6 @@
         }
     },
     "rewards": {
-        "function": "headspace:backend/ops/player_unmarked_for_probation"
+        "function": "headspace:backend/ops/player_unmarked_for_no_access"
     }
 }

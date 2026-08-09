@@ -15,7 +15,7 @@ gamemode adventure @s[predicate=headspace:on_probation,gamemode=survival]
 
 function headspace:backend/item/fragment/headspace/clear
 
-execute if predicate headspace:banned run return run function headspace:backend/ops/player_marked_for_ban
+execute if predicate headspace:no_access run return run function headspace:backend/ops/player_marked_for_no_access
 
 execute unless items entity @s container.* minecraft:goat_horn[custom_data={item_id:"headspace:otherworld_fragment"}] run function headspace:backend/item/fragment/otherworld/give
 

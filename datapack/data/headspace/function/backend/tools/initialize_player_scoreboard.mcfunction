@@ -11,8 +11,8 @@ scoreboard players set @s[gamemode=creative] hs.track.PlayerGamemode 1
 scoreboard players set @s[gamemode=adventure] hs.track.PlayerGamemode 2
 scoreboard players set @s[gamemode=spectator] hs.track.PlayerGamemode 3
 
-execute unless score @s hs.admin.PlayerBanned matches 1 run scoreboard players set @s hs.admin.PlayerBanned 0
-execute unless score @s hs.admin.PlayerOnProbation matches 1 run scoreboard players set @s hs.admin.PlayerOnProbation 0
+execute unless score @s hs.admin.PlayerAccess matches 1 run scoreboard players set @s hs.admin.PlayerAccess 0
+execute unless score @s hs.admin.PlayerPermissions matches 1 run scoreboard players set @s hs.admin.PlayerPermissions 0
 
 execute unless score @s hs.event.InHeadspace matches 1.. run scoreboard players set @s hs.event.InHeadspace 0
 execute unless score @s hs.event.SneakingOnHeadspaceBed matches 1.. run scoreboard players set @s hs.event.SneakingOnHeadspaceBed 0

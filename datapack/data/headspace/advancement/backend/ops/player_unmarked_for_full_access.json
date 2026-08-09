@@ -8,14 +8,14 @@
                         "condition": "minecraft:inverted",
                         "term": {
                             "condition": "minecraft:reference",
-                            "name": "headspace:banned"
+                            "name": "headspace:no_access"
                         }
                     },
                     {
                         "condition": "minecraft:entity_scores",
                         "entity": "this",
                         "scores": {
-                            "hs.admin.PlayerBanned": 1
+                            "hs.admin.PlayerAccess": 1
                         }
                     }
                 ]
@@ -23,6 +23,6 @@
         }
     },
     "rewards": {
-        "function": "headspace:backend/ops/player_unmarked_for_ban"
+        "function": "headspace:backend/ops/player_unmarked_for_full_access"
     }
 }
