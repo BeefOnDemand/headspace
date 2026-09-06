@@ -3,21 +3,21 @@
         "requirement": {
             "trigger": "minecraft:location",
             "conditions": {
-                "player": [
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "headspace:on_otherworld_bed"
-                    },
-                    {
-                        "condition": "minecraft:entity_scores",
-                        "entity": "this",
-                        "scores": {
-                            "hs.event.SteppingOnOtherworldBed": {
-                                "min": 1
+                "player": {
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        "headspace:on_otherworld_bed",
+                        {
+                            "type": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "hs.event.SteppingOnOtherworldBed": {
+                                    "min": 1
+                                }
                             }
                         }
-                    }
-                ]
+                    ]
+                }
             }
         }
     },

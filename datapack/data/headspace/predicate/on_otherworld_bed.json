@@ -1,15 +1,12 @@
 {
-    "condition": "minecraft:all_of",
+    "type": "minecraft:all_of",
     "terms": [
+        "headspace:in_headspace",
         {
-            "condition": "minecraft:reference",
-            "name": "headspace:in_headspace"
-        },
-        {
-            "condition": "minecraft:any_of",
+            "type": "minecraft:any_of",
             "terms": [
                 {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "stepping_on": {
@@ -20,7 +17,7 @@
                     }
                 },
                 {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "location": {
