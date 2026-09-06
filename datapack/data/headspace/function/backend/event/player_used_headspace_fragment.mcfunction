@@ -1,6 +1,6 @@
 advancement revoke @s only headspace:backend/event/player_used_headspace_fragment
 
-execute if score [Headspace] hs.dpack.Enabled matches 0 run return run function headspace:backend/alert/headspace_disabled
+execute unless function headspace:backend/tools/check_player_access run return fail
 
 effect give @s minecraft:slow_falling 1 0 true
 

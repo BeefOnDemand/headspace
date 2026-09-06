@@ -2,7 +2,7 @@ advancement revoke @s only headspace:backend/event/player_sneaking_on_headspace_
 
 execute if entity @s[tag=hs.tag.StillOnHeadspaceBed] run return fail
 
-execute if score [Headspace] hs.dpack.Enabled matches 0 run return run function headspace:backend/alert/headspace_disabled
+execute unless function headspace:backend/tools/check_player_access run return fail
 
 scoreboard players set @s hs.check.TeleportSuccess 0
 execute store success score @s hs.check.TeleportSuccess run function headspace:backend/tools/execute_with_uuid_storage/0 {function: "headspace:backend/teleport/bed/headspace/use", target: "@s"}

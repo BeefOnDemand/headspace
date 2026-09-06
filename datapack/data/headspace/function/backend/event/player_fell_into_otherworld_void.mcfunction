@@ -1,8 +1,12 @@
 advancement revoke @s only headspace:backend/event/player_fell_into_otherworld_void
 
+tag @s add hs.tag.BrushWithDeath
+
 effect give @s minecraft:slow_falling 1 0 true
 
-function headspace:backend/teleport/void/otherworld/use with storage headspace:world/headspace world.default
+execute unless function headspace:backend/tools/check_player_access run return run function headspace:backend/teleport/default/otherworld/use
+
+function headspace:backend/teleport/void/otherworld/use
 
 tag @s add hs.tag.HeadspaceTeleportUsed
 function headspace:backend/statistics/void_used
