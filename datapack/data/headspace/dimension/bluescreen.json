@@ -179,7 +179,7 @@
                 "temperature": 0,
                 "vegetation": 0
             },
-            "sea_level": 0,
+            "sea_level": 57,
             "spawn_target": []
         }
     }
