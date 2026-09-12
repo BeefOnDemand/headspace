@@ -63,6 +63,7 @@ scoreboard objectives add hs.dpack.Updated dummy
 # Settings
 scoreboard objectives add hs.setts.EnablePlayersByDefault dummy
 scoreboard objectives add hs.setts.DisablePlayerStress dummy
+scoreboard objectives add hs.setts.EnablePackAnnouncements dummy
 
 # Temporary
 scoreboard objectives add hs.tools.StorageIndex dummy
@@ -193,10 +194,11 @@ scoreboard players set [Headspace] hs.tools.StorageIndex 1
 execute unless data storage headspace:datapack pack.initialized run function headspace:backend/pack/initialize
 
 # Runs any update code for new version of datapack (one time), applies patches, and keeps record of previously loaded versions
-function headspace:backend/pack/update {major:1, minor:0, fix:2}
+function headspace:backend/pack/update {major:1, minor:0, fix:3}
 data modify storage headspace:datapack pack.changes set value '\
-* Fixed issue with stress bar showing up when player stress is disabled \n\
-* Removed display of player stress in the global player list \n\
-* Fixed minor issues with bed buddy teleporting \n\
-* Changed headspace disable function to also disable stress \n\
+* Fixed issue where fragment teleporting w/ friends does not always work the first time \n\
+* Fixed issue where forceloaded chunks are never unloaded after a bed teleport (my bad) \n\
+* Changed stress and sleep chat messages to never show if player stress is disabled \n\
+* Changed pack install/update chat alerts to not display to players by default (can be re-enabled with admin function) \n\
+* Some backend changes to how patching works \n\
 '
