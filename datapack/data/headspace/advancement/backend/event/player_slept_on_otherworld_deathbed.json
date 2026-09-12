@@ -3,23 +3,23 @@
         "example": {
             "trigger": "minecraft:slept_in_bed",
             "conditions": {
-                "player": {
-                    "type": "minecraft:all_of",
-                    "terms": [
-                        {
-                            "type": "minecraft:entity_scores",
-                            "entity": "this",
-                            "scores": {
-                                "hs.check.EnteredBed": 1,
-                                "hs.alert.PlayerSlept": 1,
-                                "hs.track.PlayerHealth": {
-                                    "max": 4
-                                }
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "hs.check.EnteredBed": 1,
+                            "hs.alert.PlayerSlept": 1,
+                            "hs.track.PlayerHealth": {
+                                "max": 4
                             }
-                        },
-                        "headspace:in_otherworld"
-                    ]
-                }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "headspace:in_otherworld"
+                    }
+                ]
             }
         }
     },

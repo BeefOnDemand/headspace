@@ -3,21 +3,21 @@
         "requirement": {
             "trigger": "minecraft:location",
             "conditions": {
-                "player": {
-                    "type": "minecraft:all_of",
-                    "terms": [
-                        "headspace:in_headspace",
-                        {
-                            "type": "minecraft:entity_scores",
-                            "entity": "this",
-                            "scores": {
-                                "hs.event.InHeadspace": {
-                                    "min": 1
-                                }
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "headspace:in_headspace"
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "hs.event.InHeadspace": {
+                                "min": 1
                             }
                         }
-                    ]
-                }
+                    }
+                ]
             }
         }
     },

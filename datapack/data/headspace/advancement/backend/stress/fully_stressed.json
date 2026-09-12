@@ -3,24 +3,24 @@
         "requirement": {
             "trigger": "minecraft:location",
             "conditions": {
-                "player": {
-                    "type": "minecraft:all_of",
-                    "terms": [
-                        {
-                            "type": "minecraft:entity_scores",
-                            "entity": "this",
-                            "scores": {
-                                "hs.track.PlayerStress": {
-                                    "min": 90
-                                }
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "hs.track.PlayerStress": {
+                                "min": 90
                             }
-                        },
-                        {
-                            "type": "minecraft:inverted",
-                            "term": "headspace:invincible"
                         }
-                    ]
-                }
+                    },
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:reference",
+                            "name": "headspace:invincible"
+                        }
+                    }
+                ]
             }
         }
     },

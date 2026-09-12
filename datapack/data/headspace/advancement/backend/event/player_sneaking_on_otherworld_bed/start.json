@@ -3,33 +3,42 @@
         "requirement": {
             "trigger": "minecraft:tick",
             "conditions": {
-                "player": {
-                    "type": "minecraft:all_of",
-                    "terms": [
-                        {
-                            "type": "minecraft:all_of",
-                            "terms": [
-                                "headspace:on_otherworld_bed",
-                                "headspace:sneaking"
-                            ]
-                        },
-                        {
-                            "type": "minecraft:entity_scores",
-                            "entity": "this",
-                            "scores": {
-                                "hs.event.SneakingOnOtherworldBed": {
-                                    "min": 0,
-                                    "max": 0
-                                }
+                "player": [
+                    {
+                        "condition": "minecraft:all_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:reference",
+                                "name": "headspace:on_otherworld_bed"
+                            },
+                            {
+                                "condition": "minecraft:reference",
+                                "name": "headspace:sneaking"
                             }
-                        },
-                        {
-                            "type": "minecraft:inverted",
-                            "term": "headspace:banned"
-                        },
-                        "headspace:headspace_user"
-                    ]
-                }
+                        ]
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "hs.event.SneakingOnOtherworldBed": {
+                                "min": 0,
+                                "max": 0
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:reference",
+                            "name": "headspace:banned"
+                        }
+                    },
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "headspace:headspace_user"
+                    }
+                ]
             }
         }
     },

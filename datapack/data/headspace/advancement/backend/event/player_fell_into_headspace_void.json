@@ -3,7 +3,12 @@
         "requirement": {
             "trigger": "minecraft:location",
             "conditions": {
-                "player": "headspace:in_headspace_void"
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "headspace:in_headspace_void"
+                    }
+                ]
             }
         }
     },
