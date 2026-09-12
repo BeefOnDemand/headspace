@@ -1,6 +1,6 @@
 ---
 name: Issue Report
-about: Report any potential issues
+about: Report any possible issues
 title: "[ISSUE]"
 labels: ''
 assignees: BeefOnDemand

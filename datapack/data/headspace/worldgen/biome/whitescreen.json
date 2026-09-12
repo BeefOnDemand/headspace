@@ -9,8 +9,12 @@
         "grass_color": "#ffffff",
         "grass_color_modifier": "none"
     },
-    "spawners": {},
-    "spawn_costs": {},
+    "attributes": {
+        "minecraft:gameplay/natural_mob_spawns": {
+            "spawn_costs": {},
+            "spawns_by_category": {}
+        }
+    },
     "carvers": [],
     "features": [
         [],

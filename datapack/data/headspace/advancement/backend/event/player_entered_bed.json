@@ -3,26 +3,23 @@
         "requirement": {
             "trigger": "minecraft:tick",
             "conditions": {
-                "player": [
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "headspace:on_bed"
-                    },
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "headspace:sleeping"
-                    },
-                    {
-                        "condition": "minecraft:inverted",
-                        "term": {
-                            "condition": "entity_scores",
-                            "entity": "this",
-                            "scores": {
-                                "hs.check.EnteredBed": 1
+                "player": {
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        "headspace:on_bed",
+                        "headspace:sleeping",
+                        {
+                            "type": "minecraft:inverted",
+                            "term": {
+                                "type": "entity_scores",
+                                "entity": "this",
+                                "scores": {
+                                    "hs.check.EnteredBed": 1
+                                }
                             }
                         }
-                    }
-                ]
+                    ]
+                }
             }
         }
     },
