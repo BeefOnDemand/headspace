@@ -9,23 +9,17 @@
                         "item_model": "headspace:otherworld_fragment"
                     }
                 },
-                "player": [
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "headspace:in_headspace"
-                    },
-                    {
-                        "condition": "minecraft:inverted",
-                        "term": {
-                            "condition": "minecraft:reference",
-                            "name": "headspace:banned"
-                        }
-                    },
-                    {
-                        "condition": "minecraft:reference",
-                        "name": "headspace:headspace_user"
-                    }
-                ]
+                "player": {
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        "headspace:in_headspace",
+                        {
+                            "type": "minecraft:inverted",
+                            "term": "headspace:banned"
+                        },
+                        "headspace:headspace_user"
+                    ]
+                }
             }
         }
     },

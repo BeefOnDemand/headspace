@@ -1,1 +1,1 @@
-$execute in $(dimension) run forceload remove $(x) $(z)
+$execute in $(dimension) positioned $(x) $(y) $(z) run forceload remove ~ ~
