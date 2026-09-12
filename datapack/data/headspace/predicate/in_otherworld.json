@@ -1,7 +1,4 @@
 {
-    "condition": "minecraft:inverted",
-    "term": {
-        "condition": "minecraft:reference",
-        "name": "headspace:in_headspace"
-    }
+    "type": "minecraft:inverted",
+    "term": "headspace:in_headspace"
 }

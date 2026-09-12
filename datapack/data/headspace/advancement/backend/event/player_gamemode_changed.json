@@ -83,16 +83,29 @@
                                             }
                                         }
                                     }
-                                ]
-                            },
-                            {
-                                "condition": "minecraft:all_of",
-                                "terms": [
-                                    {
-                                        "condition": "entity_scores",
-                                        "entity": "this",
-                                        "scores": {
-                                            "hs.track.PlayerGamemode": 3
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:all_of",
+                            "terms": [
+                                {
+                                    "type": "entity_scores",
+                                    "entity": "this",
+                                    "scores": {
+                                        "hs.track.PlayerGamemode": 2
+                                    }
+                                },
+                                {
+                                    "type": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "minecraft:type_specific/player": {
+                                            "gamemode": [
+                                                "survival",
+                                                "creative",
+                                                "spectator"
+                                            ]
                                         }
                                     },
                                     {
@@ -109,11 +122,11 @@
                                             }
                                         }
                                     }
-                                ]
-                            }
-                        ]
-                    }
-                ]
+                                }
+                            ]
+                        }
+                    ]
+                }
             }
         }
     },

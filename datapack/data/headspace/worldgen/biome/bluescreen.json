@@ -30,8 +30,12 @@
         ],
         []
     ],
-    "spawners": {},
-    "spawn_costs": {},
+    "attributes": {
+        "minecraft:gameplay/natural_mob_spawns": {
+            "spawn_costs": {},
+            "spawns_by_category": {}
+        }
+    },
     "carvers": [],
     "temperature_modifier": "none"
 }

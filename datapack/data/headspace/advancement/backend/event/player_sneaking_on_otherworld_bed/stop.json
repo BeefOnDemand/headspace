@@ -3,33 +3,30 @@
         "requirement": {
             "trigger": "minecraft:tick",
             "conditions": {
-                "player": [
-                    {
-                        "condition": "minecraft:entity_scores",
-                        "entity": "this",
-                        "scores": {
-                            "hs.event.SneakingOnOtherworldBed": {
-                                "min": 1
+                "player": {
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "type": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "hs.event.SneakingOnOtherworldBed": {
+                                    "min": 1
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:inverted",
+                            "term": {
+                                "type": "minecraft:all_of",
+                                "terms": [
+                                    "headspace:on_otherworld_bed",
+                                    "headspace:sneaking"
+                                ]
                             }
                         }
-                    },
-                    {
-                        "condition": "minecraft:inverted",
-                        "term": {
-                            "condition": "minecraft:all_of",
-                            "terms": [
-                                {
-                                    "condition": "minecraft:reference",
-                                    "name": "headspace:on_otherworld_bed"
-                                },
-                                {
-                                    "condition": "minecraft:reference",
-                                    "name": "headspace:sneaking"
-                                }
-                            ]
-                        }
-                    }
-                ]
+                    ]
+                }
             }
         }
     },
